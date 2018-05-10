@@ -1,0 +1,46 @@
+body
+  font-family '-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+              'Helvetica Neue', Helvetica, sans-serif
+
+@keyframes pulse
+  0%
+    opacity 0
+
+  20%
+    opacity 0.2
+
+  40%
+    opacity 0.4
+
+  60%
+    opacity 0.6
+
+  80%
+    opacity 0.8
+
+  100%
+    opacity 1
+
+.zar
+  color white
+  font-size 40vw
+  height 50vw
+  text-align center
+  cursor default
+  -webkit-touch-callout none
+  -webkit-user-select none
+  -khtml-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  user-select none
+
+  &.rolling
+    animation pulse .6s
+
+.zarlar
+  background black
+  text-selection none
+  height 100vh
+  display flex
+  align-items center
+  justify-content center
