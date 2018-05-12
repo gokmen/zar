@@ -1,31 +1,28 @@
+@font-face
+  font-family 'DejaVu'
+  src url('/images/deja-vu-sans-mono.woff') format('woff')
+
 body
-  font-family '-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
-              'Helvetica Neue', Helvetica, sans-serif
+  font-family 'DejaVu', sans-serif
+  width 100%
+  height 100%
+  position fixed
+  overflow hidden
 
 @keyframes pulse
   0%
     opacity 0
-
-  20%
-    opacity 0.2
-
-  40%
-    opacity 0.4
-
-  60%
-    opacity 0.6
-
-  80%
-    opacity 0.8
-
   100%
     opacity 1
 
 .zar
   color white
-  font-size 40vw
-  height 50vw
+  font-size 50vw
   text-align center
+
+  width 50vw
+  float left
+
   cursor default
   -webkit-touch-callout none
   -webkit-user-select none
@@ -34,6 +31,12 @@ body
   -ms-user-select none
   user-select none
 
+  span
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -55%)
+
   &.rolling
     animation pulse .6s
 
@@ -41,6 +44,3 @@ body
   background black
   text-selection none
   height 100vh
-  display flex
-  align-items center
-  justify-content center
